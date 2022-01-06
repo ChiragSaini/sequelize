@@ -19,7 +19,6 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "migrate": "sequelize db:migrate",
-    "parse": "node test.js",
     "seed": "sequelize db:seed:all"
   },
   "devDependencies": {

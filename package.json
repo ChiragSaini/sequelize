@@ -1,0 +1,26 @@
+{
+  "name": "giva-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "connect-redis": "^6.0.0",
+    "csv-parse": "^5.0.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "ioredis": "^4.28.2",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.5"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "CHOKIDAR_USEPOLLING=true nodemon ./src/index.js -L",
+    "migrate": "sequelize db:migrate",
+    "parse": "node test.js",
+    "seed": "sequelize db:seed:all"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -9,13 +9,15 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "ioredis": "^4.28.2",
+    "lodash": "^4.17.21",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
+    "redis": "^4.0.1",
     "sequelize": "^6.12.5"
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "CHOKIDAR_USEPOLLING=true nodemon ./src/index.js -L",
+    "dev": "nodemon src/index.js",
     "migrate": "sequelize db:migrate",
     "parse": "node test.js",
     "seed": "sequelize db:seed:all"

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   State.init({
-    date: DataTypes.DATETIME,
+    date: DataTypes.TEXT,
     state: DataTypes.TEXT,
     fips: DataTypes.INTEGER,
     cases: DataTypes.INTEGER,
